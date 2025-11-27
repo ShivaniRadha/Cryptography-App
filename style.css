@@ -1,0 +1,143 @@
+* :root {
+    --bg: #ffffff;
+    /* White background */
+    --card: #ffffff;
+    /* Card also white */
+    --accent: #000000;
+    /* Black buttons or main color */
+    --muted: #333333;
+    /* Dark grey muted text */
+    --text: #000000;
+    /* Black text */
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #ffffff;
+    /* White background */
+    color: var(--text);
+    /* Black text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.container {
+    width: 100%;
+    max-width: 860px;
+}
+
+header {
+    margin-bottom: 18px;
+    text-align: center
+}
+
+h1 {
+    font-size: 32px;
+    letter-spacing: 0.2px
+}
+
+.subtitle {
+    color: var(--muted);
+    margin-top: 6px
+}
+
+.card {
+    background: #ffffff;
+    /* White card */
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+select,
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    font-size: 15px;
+    color: var(--text);
+    background: #ffffff;
+    resize: vertical;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+#caesar-options {
+    max-width: 200px
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+button {
+    padding: 10px 14px;
+    background: #000000;
+    /* Black button */
+    color: #ffffff;
+    /* White text on button */
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button.muted {
+    background: transparent;
+    color: #333333;
+    border: 1px solid #999999;
+}
+
+button:active {
+    transform: translateY(1px)
+}
+
+textarea[readonly] {
+    background: #f2f2f2
+}
+
+.footer {
+    margin-top: 12px;
+    text-align: center;
+    color: #333333;
+    font-size: 13px;
+}
+
+@media (max-width:600px) {
+    .card {
+        padding: 14px
+    }
+
+    h1 {
+        font-size: 24px
+    }
+}
